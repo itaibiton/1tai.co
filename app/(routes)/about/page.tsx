@@ -59,7 +59,7 @@ export default function About() {
                 >
                     <h1 className="text-4xl md:text-5xl font-bold mb-6">About 1tai.co</h1>
                     <p className="text-xl text-gray-600 mb-8">
-                        We're dedicated to helping businesses thrive in the digital age through innovative solutions and expert services.
+                        We&apos;re dedicated to helping businesses thrive in the digital age through innovative solutions and expert services.
                     </p>
                 </motion.div>
             </section>
