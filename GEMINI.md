@@ -1,8 +1,31 @@
-@import "tailwindcss";
-@import "tw-animate-css";
+# Project: 1tai.co
 
-@custom-variant dark (&:is(.dark *));
+## 1. Overview
 
+This project is the personal portfolio and services website for Itai Biton, located at `1tai.co`. The primary goal is to showcase skills and sell services to potential clients.
+
+## 2. Core Offerings
+
+The website will advertise the following services:
+-   **Senior Frontend Development:** Building modern, responsive, and high-performance user interfaces.
+-   **Web Creation:** Full creation of websites, landing pages, and complex web applications.
+-   **Video Editing:** Professional video editing services.
+-   **AI Services:** Integration and development of AI-powered features and solutions.
+
+## 3. Initial Development Focus (Phase 1)
+
+The immediate goal is to create a single, visually stunning, and highly engaging landing page.
+
+-   **Design:** The landing page should have a "crazy," unique, and memorable design to capture visitor attention immediately.
+-   **Structure:** It will be a single-page layout with no additional routes or navigation to other pages.
+-   **Content:** The page will concisely present the core service offerings and a clear call-to-action.
+
+## 4. Design System
+
+The following is the color and typography scheme for the website.
+
+### Base Variables
+```css
 :root {
   --background: oklch(1 0 0);
   --foreground: oklch(0.1450 0 0);
@@ -20,9 +43,9 @@
   --accent-foreground: oklch(0.2050 0 0);
   --destructive: oklch(0.5770 0.2450 27.3250);
   --destructive-foreground: oklch(1 0 0);
-  --border: oklch(0.97 0 0);
-  --input: oklch(0.97 0 0);
-  --ring: oklch(0.92 0 0);
+  --border: oklch(0.9220 0 0);
+  --input: oklch(0.9220 0 0);
+  --ring: oklch(0.7080 0 0);
   --chart-1: oklch(0.8100 0.1000 252);
   --chart-2: oklch(0.6200 0.1900 260);
   --chart-3: oklch(0.5500 0.2200 263);
@@ -96,7 +119,10 @@
   --shadow-xl: 0 1px 3px 0px hsl(0 0% 0% / 0.10), 0 8px 10px -1px hsl(0 0% 0% / 0.10);
   --shadow-2xl: 0 1px 3px 0px hsl(0 0% 0% / 0.25);
 }
+```
 
+### Theme
+```css
  @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -149,12 +175,4 @@
   --shadow-xl: var(--shadow-xl);
   --shadow-2xl: var(--shadow-2xl);
 }
-
-@layer base {
-  * {
-    @apply border-border outline-ring/50;
-  }
-  body {
-    @apply bg-background text-foreground;
-  }
-}
+```
