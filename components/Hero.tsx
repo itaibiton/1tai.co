@@ -16,7 +16,7 @@ export default function Hero() {
         height={200}
       />
       <Image
-        src="/1tai-logo/Logo/PNGs/favicon-512px.png"
+        src="/1tai-logo/Logo/PNGs/icon-512px.png"
         alt="Favicon"
         width={100}
         height={100}
